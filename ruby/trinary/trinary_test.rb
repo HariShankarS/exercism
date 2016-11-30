@@ -4,9 +4,7 @@ require 'minitest/autorun'
 require_relative 'trinary'
 
 class TrinaryTest < Minitest::Test
-  module BookKeeping
-     VERSION = 1
-  end 
+  
   def test_trinary_1_is_decimal_1
     assert_equal 1, Trinary.new('1').to_decimal
   end

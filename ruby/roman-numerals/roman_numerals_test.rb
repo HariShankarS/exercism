@@ -7,9 +7,6 @@ require_relative 'roman_numerals'
 # deb225e Implement canonical dataset for scrabble-score problem (#255)
 
 class RomanNumeralsTest < Minitest::Test
-  module BookKeeping
-     VERSION = 2
-  end 
 
   def test_1
     assert_equal 'I', 1.to_roman

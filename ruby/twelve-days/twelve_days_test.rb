@@ -30,7 +30,4 @@ class TwelveDaysTest < Minitest::Test
     assert_equal 2, BookKeeping::VERSION
   end
 
-  module BookKeeping
-    VERSION = 2
-  end
 end

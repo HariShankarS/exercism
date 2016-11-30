@@ -12,8 +12,7 @@ class Proverb
 
   def to_s
     proverb = ""
-    nouns = @nouns.each_cons(2).to_a
-    nouns.each do |i,j|
+    @nouns.each_cons(2) do |i,j|
       proverb += "For want of a #{i} the #{j} was lost.\n"
     end
     proverb += "And all for the want of a #{@qualifier}."

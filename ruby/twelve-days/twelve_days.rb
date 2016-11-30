@@ -31,3 +31,7 @@ class TwelveDays
     result.reverse.join(", ").gsub("and,","and")
   end
 end
+
+module BookKeeping
+  VERSION = 2
+end

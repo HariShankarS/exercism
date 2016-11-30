@@ -6,3 +6,7 @@ class Acronym
   end
 
 end
+
+module BookKeeping
+  VERSION = 2
+end

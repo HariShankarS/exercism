@@ -6,11 +6,7 @@ require_relative 'gigasecond'
 # Test data version: 9b8b80c
 
 class GigasecondTest < Minitest::Test
-  
-  module BookKeeping
-     VERSION = 3
-  end  
-  
+
   def test_2011_04_25
     result = Gigasecond.from(Time.utc(2011, 4, 25, 0, 0, 0))
     assert_equal Time.utc(2043, 1, 1, 1, 46, 40), result

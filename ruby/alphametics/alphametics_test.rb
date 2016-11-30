@@ -79,9 +79,5 @@ class AlphameticsTest < Minitest::Test
   def test_bookkeeping
     assert_equal 3, BookKeeping::VERSION
   end
-  
-  module BookKeeping
-    VERSION = 3
-  end
-  
+
 end

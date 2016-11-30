@@ -8,10 +8,6 @@ require_relative 'pangram'
 # deb225e Implement canonical dataset for scrabble-score problem (#255)
 
 class PangramTest < Minitest::Test
-  
-  module BookKeeping
-    VERSION = 2
-  end
 
   def test_sentence_empty
     str = ''

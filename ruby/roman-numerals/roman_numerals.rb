@@ -23,9 +23,13 @@ class Integer
     number = self
     roman_mapping.keys.each do |divisor|
       quotient, modulus = number.divmod(divisor)
-      result << roman_mapping[divisor] * quotient
+      result << (roman_mapping[divisor] * quotient)
       number = modulus
     end
-  result
+    result
   end
+end
+
+module BookKeeping
+  VERSION = 2
 end

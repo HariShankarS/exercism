@@ -7,9 +7,6 @@ require_relative 'binary'
 # Test data version:
 # 01092b0
 class BinaryTest < Minitest::Test
-  module BookKeeping
-    VERSION = 2
-  end
 
   def test_binary_0_is_decimal_0
     # skip

@@ -1,29 +1,23 @@
 class Raindrops
 
-
-  def self.divisible_by(*args,number)
-    divisor1,divisor2,divisor3 = *args
-    (number % (divisor1 || number))== 0 && (number % ( divisor2 || number)) == 0 && (number % (divisor3 || number)) == 0
+  def self.mapping
+    {
+      3 => "Pling",
+      5 => "Plang",
+      7 => "Plong"
+    }
   end
 
   def self.convert(number)
-    if divisible_by(5,7,3,number)
-      "PlingPlangPlong"
-    elsif divisible_by(3,5,number)
-      'PlingPlang'
-    elsif divisible_by(3,7,number)
-      "PlingPlong"
-    elsif divisible_by(5,7,number)
-      "PlangPlong"
-    elsif divisible_by(3,number)
-      'Pling'
-    elsif divisible_by(5,number)
-      'Plang'
-    elsif divisible_by(7,number)
-      'Plong'
-    else 
-      "#{number}"
+    output = ""
+    [3,5,7].each do |i|
+      output += mapping[i] if (number % i) == 0
     end
+    output = "#{number}" if output.empty?
+    output
   end
+end
 
+module BookKeeping
+  VERSION = 2
 end

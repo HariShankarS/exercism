@@ -7,7 +7,7 @@ class BaseConverter
       invalid = []
       array = digits.reverse
       array.each_with_index do |i,j|
-        num += (input_base**j)*i
+        num += (input_base ** j) * i
         invalid << true if i >= input_base
         a << 0 if i < 0 
       end
@@ -29,4 +29,8 @@ class BaseConverter
     end	 
   end
   
+end
+
+module BookKeeping
+  VERSION = 1
 end

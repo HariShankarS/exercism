@@ -371,7 +371,4 @@ Go to the store and buy some more, 99 bottles of beer on the wall.
     assert_equal 2, BookKeeping::VERSION
   end
 
-  module BookKeeping
-    VERSION = 2
-  end
 end

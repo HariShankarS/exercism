@@ -15,9 +15,6 @@ class Date
 end
 
 class YearTest < Minitest::Test
-  module BookKeeping
-    VERSION = 2
-  end
 
   def test_leap_year
     assert Year.leap?(1996), "Expected 'true', 1996 is a leap year."

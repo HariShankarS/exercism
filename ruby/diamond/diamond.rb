@@ -25,3 +25,7 @@ class Diamond
   end
 
 end
+
+module Bookkeeping
+  VERSION = 1
+end

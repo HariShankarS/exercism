@@ -8,9 +8,7 @@ class Anagram
     output = []
     array.each do |a|
       unless a.downcase == @word.downcase
-        if test(a) == test(@word)
-          output << a
-        end 
+        output << a if test(a) == test(@word)
       end
     end
     output
@@ -20,4 +18,8 @@ class Anagram
     word.downcase.chars.sort
   end
 
+end
+
+module BookKeeping
+  VERSION = 2
 end

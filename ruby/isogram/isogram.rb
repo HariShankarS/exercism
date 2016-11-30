@@ -4,3 +4,7 @@ class Isogram
     letters == letters.uniq
   end
 end
+
+module BookKeeping
+  VERSION = 1
+end

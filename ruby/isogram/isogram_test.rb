@@ -77,7 +77,4 @@ class IsogramTest < Minitest::Test
     assert_equal 1, BookKeeping::VERSION
   end
 
-  module BookKeeping
-    VERSION = 1
-  end
 end

@@ -5,3 +5,7 @@ class Year
   end
 
 end
+
+module BookKeeping
+  VERSION = 2
+end

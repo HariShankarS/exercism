@@ -26,7 +26,6 @@ class Clock
     end
     if @number1 < 0
       until @number1 >= 0
-      	puts @number1
         @number1 += 24
       end
     end
@@ -37,7 +36,6 @@ class Clock
   end
 
   def hours   
-    puts @number1.inspect   
     sprintf '%02d', @number1
   end
 
@@ -52,4 +50,8 @@ class Clock
   def ==(second_object)
     to_s == second_object.to_s
   end
+end
+
+module BookKeeping
+  VERSION = 2
 end

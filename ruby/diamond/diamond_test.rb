@@ -39,7 +39,4 @@ class DiamondTest < Minitest::Test
     assert_equal 1, Bookkeeping::VERSION
   end
   
-  module Bookkeeping
-    VERSION = 1
-  end
 end

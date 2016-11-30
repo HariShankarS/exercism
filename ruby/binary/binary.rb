@@ -13,7 +13,7 @@ class Binary
     length = @binary.length
     value = 0
     for i in 0..length      
-      value += @binary[i].to_i*(2**i) if i < length
+      value += ((@binary[i].to_i) * (2 ** i)) if i < length
     end 
     value 	
   end
@@ -21,4 +21,7 @@ class Binary
 # def to_decimal
 #   @binary.to_i(2)
 # end
+end
+module BookKeeping
+  VERSION = 2
 end

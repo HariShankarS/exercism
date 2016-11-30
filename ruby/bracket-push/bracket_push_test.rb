@@ -81,7 +81,4 @@ class BracketsTest < Minitest::Test
     assert_equal 3, BookKeeping::VERSION
   end
 
-  module BookKeeping
-    VERSION = 3
-  end
 end

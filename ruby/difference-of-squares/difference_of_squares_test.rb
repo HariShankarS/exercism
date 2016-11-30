@@ -7,9 +7,7 @@ require_relative 'difference_of_squares'
 # deb225e Implement canonical dataset for scrabble-score problem (#255)
 
 class DifferenceOfSquaresTest < Minitest::Test
-  module BookKeeping
-     VERSION = 3
-  end    
+ 
   def test_square_of_sum_5
     assert_equal 225, Squares.new(5).square_of_sum
   end

@@ -1,4 +1,4 @@
-class HelloWorld
+module HelloWorld
 
   def self.hello(name = nil)
     name ||= "World"

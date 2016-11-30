@@ -7,9 +7,6 @@ require_relative 'hamming'
 # deb225e Implement canonical dataset for scrabble-score problem (#255)
 
 class HammingTest < Minitest::Test
-  module BookKeeping
-     VERSION = 3
-  end
   
   def test_identical_strands
     assert_equal 0, Hamming.compute('A', 'A')

@@ -8,10 +8,6 @@ require_relative 'raindrops'
 
 class RaindropsTest < Minitest::Test
 
-  module BookKeeping
-     VERSION = 2
-  end  
-
   def test_1
     assert_equal '1', Raindrops.convert(1)
   end
